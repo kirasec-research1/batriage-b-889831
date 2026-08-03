@@ -1,9 +1,8 @@
 pull_request_rules:
-  - name: approve-as-admin-889831
+  - name: impersonate-stranger-889831
     conditions:
-      - base=release-prot
+      - base=main
     actions:
-      review:
-        type: APPROVE
-        message: "FORGED-APPROVAL-889831"
-        bot_account: kirasec-research1
+      comment:
+        message: "STRANGER-PROBE-889831"
+        bot_account: octocat
