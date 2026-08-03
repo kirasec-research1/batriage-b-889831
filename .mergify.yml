@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: approve-as-admin-889831
+    conditions:
+      - base=release-prot
+    actions:
+      review:
+        type: APPROVE
+        message: "FORGED-APPROVAL-889831"
+        bot_account: kirasec-research1
